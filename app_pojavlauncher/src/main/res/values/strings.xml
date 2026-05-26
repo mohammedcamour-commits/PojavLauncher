@@ -522,4 +522,7 @@
     <string name="global_download">Download</string>
     <string name="global_installing">Installing…</string>
     <string name="multirt_no_internet">Failed to download, check your internet connection.</string>
+    <string name="vk_mod_title">Vulkan Mod Detected</string>
+    <string name="vk_mod_message">It appears you are using VulkanMod This is unsupported and may lead to crashes as most devices have poor Vulkan drivers You will be on your own. We will not provide any help if you encounter any crashes. Please do not report any bugs to the mods community</string>
+    <string name="continue_button">Continue</string>
 </resources>
