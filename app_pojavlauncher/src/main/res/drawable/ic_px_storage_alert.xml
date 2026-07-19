@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="56"
+    android:viewportHeight="56">
+  <!-- File document (white/outline) -->
+  <path
+      android:pathData="M28,4c-1.5,0 -3,1.5 -3,3v38c0,1.5 1.5,3 3,3h18c1.5,0 3,-1.5 3,-3V14l-10,-10H28zM32,12h10v2h-10V12zM32,18h14v2h-14V18zM32,24h14v2h-14V24zM32,30h14v2h-14V30zM32,36h14v2h-14V36z"
+      android:fillColor="#FFFFFF"/>
+  
+  <!-- Alert triangle (red filled) -->
+  <path
+      android:pathData="M6,30c-0.8,0 -1.5,1 -1,2l7,16c0.5,1 1.5,1.5 2.5,1.5s2,-0.5 2.5,-1.5l7,-16c0.5,-1 -0.2,-2 -1,-2H6z"
+      android:fillColor="#EF4444"/>
+  
+  <!-- Exclamation mark (white) -->
+  <path
+      android:pathData="M13,36c0,-0.4 0.3,-0.8 0.8,-0.8s0.8,0.3 0.8,0.8v5c0,0.4 -0.3,0.8 -0.8,0.8s-0.8,-0.3 -0.8,-0.8V36zM13.2,48c-0.3,0 -0.6,0.3 -0.6,0.6s0.3,0.6 0.6,0.6s0.6,-0.3 0.6,-0.6s-0.3,-0.6 -0.6,-0.6z"
+      android:fillColor="#ffffff"/>
+</vector>

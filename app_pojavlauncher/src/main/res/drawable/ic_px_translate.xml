@@ -3,7 +3,22 @@
     android:height="64dp"
     android:viewportWidth="56"
     android:viewportHeight="48">
+  <!-- Globe with grid lines -->
   <path
-      android:pathData="M0,0h36v12h20v36L24,48L24,36L0,36zM32,4L4,4v28h28zM12,8h12v4h4v16h-4v-4L12,24v4L8,28L8,12h4zM24,12L12,12v8h12zM52,16L36,16v4h8v8h4v-8h4zM44,28h-4v4h4zM40,32h-4v4h4zM36,36h-4v4h4zM44,36h-4v4h4zM52,40h-8v4h8z"
-      android:fillColor="@color/icon_outline_color"/>
+      android:pathData="M18,6c-8,0 -14,6 -14,14s6,14 14,14s14,-6 14,-14s-6,-14 -14,-14zM8,18c0,-4.4 2.4,-8.4 6,-10.6V14h8V6.4C28.4,8.6 30,12.6 30,18H22v4h8c0,4.4 -2.4,8.4 -6,10.6V28h-8v8.4C10.4,34.4 8,30.4 8,26h8v-4H8zM12,14h4v4h-4V14zM18,14h4v4h-4V14zM24,14h4v4h-4V14zM12,20h4v4h-4V20zM18,20h4v4h-4V20zM24,20h4v4h-4V20zM12,26h4v4h-4V26zM18,26h4v4h-4V26zM24,26h4v4h-4V26z"
+      android:fillColor="#FFFFFF"/>
+  
+  <!-- Top left speech bubble (white fill, outline) -->
+  <path
+      android:pathData="M2,6c-2,0 -2,2 -2,4v12c0,2 0,4 2,4h14c2,0 2,-2 2,-4v-2l4,2v-6l-4,2v-8c0,-2 0,-4 -2,-4H2zM4,10h10v2H4V10zM4,14h10v2H4V14zM4,18h6v2H4V18z"
+      android:fillColor="@ffffff"
+      android:strokeColor="#FFFFFF"
+      android:strokeWidth="0.5"/>
+  
+  <!-- Bottom right speech bubble (white fill, outline) -->
+  <path
+      android:pathData="M36,26c-2,0 -2,2 -2,4v12c0,2 0,4 2,4h14c2,0 2,-2 2,-4v-2l4,2v-6l-4,2v-8c0,-2 0,-4 -2,-4H36zM38,30h10v2H38V30zM38,34h10v2H38V34zM38,38h6v2H38V38z"
+      android:fillColor="@ffffff"
+      android:strokeColor="#FFFFFF"
+      android:strokeWidth="0.5"/>
 </vector>

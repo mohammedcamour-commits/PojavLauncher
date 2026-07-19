@@ -3,7 +3,28 @@
     android:height="73dp"
     android:viewportWidth="66"
     android:viewportHeight="66">
+  <!-- Top pins (gold) -->
   <path
-      android:pathData="M5,0h5v10L5,10zM15,0h5v10h-5zM25,0h5v10h-5zM35,0h5v10h-5zM45,0h5v10h-5zM0,15h55v25L0,40zM50,20L5,20v15h45zM5,45h5v10L5,55zM15,45h5v10h-5zM25,45h5v10h-5zM35,45h5v10h-5zM45,45h5v10h-5z"
-      android:fillColor="@color/icon_outline_color"/>
+      android:pathData="M10,2c-1,0 -2,1 -2,2v6c0,1 1,2 2,2h4c1,0 2,-1 2,-2V4c0,-1 -1,-2 -2,-2h-4zM22,2c-1,0 -2,1 -2,2v6c0,1 1,2 2,2h4c1,0 2,-1 2,-2V4c0,-1 -1,-2 -2,-2h-4zM34,2c-1,0 -2,1 -2,2v6c0,1 1,2 2,2h4c1,0 2,-1 2,-2V4c0,-1 -1,-2 -2,-2h-4zM46,2c-1,0 -2,1 -2,2v6c0,1 1,2 2,2h4c1,0 2,-1 2,-2V4c0,-1 -1,-2 -2,-2h-4z"
+      android:fillColor="#FBBF24"/>
+  
+  <!-- Chip body (gray) -->
+  <path
+      android:pathData="M4,12c-2,0 -4,2 -4,4v32c0,2 2,4 4,4h50c2,0 4,-2 4,-4V16c0,-2 -2,-4 -4,-4H4zM8,18h44v20H8V18z"
+      android:fillColor="#6B7280"/>
+  
+  <!-- RAM label area (green) -->
+  <path
+      android:pathData="M10,20c-1,0 -2,1 -2,2v14c0,1 1,2 2,2h40c1,0 2,-1 2,-2V22c0,-1 -1,-2 -2,-2H10z"
+      android:fillColor="#86EFAC"/>
+  
+  <!-- "RAM" text (simplified) -->
+  <path
+      android:pathData="M20,28h3v6h-3V28zM26,28h3v6h-3V28zM32,28h3v6h-3V28z"
+      android:fillColor="#000000"/>
+  
+  <!-- Bottom pins (gold) -->
+  <path
+      android:pathData="M10,50c-1,0 -2,1 -2,2v6c0,1 1,2 2,2h4c1,0 2,-1 2,-2v-6c0,-1 -1,-2 -2,-2h-4zM22,50c-1,0 -2,1 -2,2v6c0,1 1,2 2,2h4c1,0 2,-1 2,-2v-6c0,-1 -1,-2 -2,-2h-4zM34,50c-1,0 -2,1 -2,2v6c0,1 1,2 2,2h4c1,0 2,-1 2,-2v-6c0,-1 -1,-2 -2,-2h-4zM46,50c-1,0 -2,1 -2,2v6c0,1 1,2 2,2h4c1,0 2,-1 2,-2v-6c0,-1 -1,-2 -2,-2h-4z"
+      android:fillColor="#FBBF24"/>
 </vector>

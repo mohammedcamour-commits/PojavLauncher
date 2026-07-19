@@ -3,7 +3,14 @@
     android:height="85dp"
     android:viewportWidth="48"
     android:viewportHeight="64">
+  <!-- Cursor pointer arrow -->
   <path
-      android:pathData="M0,0h4v4h4v4h4v4h4v4h4v4h4v4h4v4h4v4h4v4h4v4L28,40v4h4v8h4v8h-4v4h-8v-4h-4v-8h-4v-8h-4v4L8,48v4L4,52v4L0,56zM8,8L4,8v40h4v-4h4v-4h4v4h4v8h4v8h8v-8h-4v-8h-4v-8h8v-4h-4v-4h-4v-4h-4v-4h-4v-4h-4v-4L8,12z"
-      android:fillColor="@color/icon_outline_color"/>
+      android:pathData="M8,4l28,28v4h4l12,16h-4l-12,-16h-4v4l-28,-28l-4,-8z"
+      android:fillColor="#FFFFFF"/>
+  
+  <!-- Pointer arrow outline for clarity -->
+  <path
+      android:pathData="M10,6l24,24v2h2l10,14h-2l-10,-14h-2v2l-24,-24z"
+      android:fillColor="#FFFFFF"
+      android:strokeWidth="1.5"/>
 </vector>
