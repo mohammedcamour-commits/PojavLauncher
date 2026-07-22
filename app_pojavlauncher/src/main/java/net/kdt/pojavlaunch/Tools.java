@@ -957,4 +957,18 @@ public final class Tools {
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         context.getApplicationContext().startActivity(intent);
     }
+
+    @SuppressLint("DefaultLocale")
+    public static String formatFileSize(long bytes) {
+        if (bytes <= 0) return "0 B";
+
+        final String[] units = {"B", "KB", "MB", "GB"};
+        int unitIndex = 0;
+        double value = bytes;
+        while (value >= 1024 && unitIndex < units.length - 1) {
+            value /= 1024;
+            unitIndex++;
+        }
+        return String.format("%.2f %s", value, units[unitIndex]);
+    }
 }
