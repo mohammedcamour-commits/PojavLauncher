@@ -2,4 +2,8 @@
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
     <background android:drawable="@color/ic_launcher_background"/>
     <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+<<<<<<< HEAD
+=======
+    <monochrome android:drawable="@color/ic_launcher_background"/>
+>>>>>>> e19a113ba (fix[appid] fix appids and fix data migration)
 </adaptive-icon>
