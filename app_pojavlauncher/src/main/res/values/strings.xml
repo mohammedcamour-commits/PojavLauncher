@@ -518,4 +518,8 @@
     <string name="setting_java_memory_too_small">The current memory allocation is too small, at least %d MB is required</string>
     <string name="alertdialog_done">Done</string>
     <string name="alertdialog_cancel">Cancel</string>
+    <string name="global_not_installed">Not Installed</string>
+    <string name="global_download">Download</string>
+    <string name="global_installing">Installing…</string>
+    <string name="multirt_no_internet">Failed to download, check your internet connection.</string>
 </resources>
