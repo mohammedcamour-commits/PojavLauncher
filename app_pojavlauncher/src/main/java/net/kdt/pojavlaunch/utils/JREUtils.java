@@ -148,6 +148,10 @@ public class JREUtils {
            envMap.put("LIBGL_NOERROR", "1");
         }
 
+        if(renderer.equals("opengles_mobileglues")) {
+           envMap.put("MG_DIR_PATH", Tools.DIR_DATA + "/MobileGlues");
+        }
+
         // Init mesa renderers
         MesaUtils.initEnvironment(context, renderer, envMap);
 
