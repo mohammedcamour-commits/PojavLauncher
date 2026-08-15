@@ -48,7 +48,7 @@ public class LauncherPreferenceVideoFragment extends LauncherPreferenceFragment 
         // Show ANGLE switch only if AnglePlugin is available
         LibraryPlugin angle = LibraryPlugin.discoverPlugin(getContext(), LibraryPlugin.ID_ANGLE_PLUGIN);
         SwitchPreferenceCompat angleSwitch = requirePreference("use_angle", SwitchPreferenceCompat.class);
-        angleSwitch.setVisible(angle != null);
+        angleSwitch.setVisible(true); //hehe
         angleSwitch.setChecked(LauncherPreferences.PREF_USE_ANGLE);
 
         // Same but for ZINK plugin
