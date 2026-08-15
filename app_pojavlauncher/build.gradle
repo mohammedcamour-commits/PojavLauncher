@@ -27,7 +27,7 @@ def getVersionName = {
     }else {
         def branchName = currentBranch.getName()
         def commitAbbreviation = latestCommit.abbreviatedId
-        return "iris-${dateToday}-${commitAbbreviation}-${branchName}"
+        return "mahdin6563-${dateToday}-${commitAbbreviation}-${branchName}"
     }
 }
 
@@ -50,7 +50,7 @@ configurations {
 }
 
 android {
-    namespace 'git.artdeell.mojo'
+    namespace 'net.kdt.pojavlaunch'
 
     compileSdk = 36
 
@@ -80,7 +80,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "git.artdeell.mjlaunch"
+        applicationId "net.kdt.pojavlaunch"
         minSdkVersion 21
         targetSdkVersion 36
         versionCode getDateSeconds()
