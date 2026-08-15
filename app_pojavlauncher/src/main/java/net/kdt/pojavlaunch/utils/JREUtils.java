@@ -134,8 +134,21 @@ public class JREUtils {
 		}
 		envMap.put("MOD_ANDROID_RUNTIME", modRuntimeDir.getAbsolutePath());
 
-        setupAngleEnv(context, envMap);
         setupFfmpegEnv(context, envMap);
+
+        if (renderer.equals("opengles3_ltw")) {
+          setupAngleEnv(context, envMap);
+        }
+
+        if(renderer.equals("opengles3_ng_gl4es")) {
+           envMap.put("LIBGL_USE_MC_COLOR", "1");
+           envMap.put("DLOPEN", "libspirv-cross-c-shared.so");
+           envMap.put("LIBGL_GL", "31");
+           envMap.put("LIBGL_ES", "3");
+           envMap.put("LIBGL_NORMALIZE", "1");
+           envMap.put("LIBGL_NOINTOVLHACK", "1");
+        }
+
         // Init mesa renderers
         MesaUtils.initEnvironment(context, renderer, envMap);
 
@@ -253,6 +266,16 @@ public class JREUtils {
                 break;
             case "opengles3_ltw" :
                 renderLibrary = "libltw.so";
+                useGles = true;
+                glesVersion = 3;
+                break;
+            case "opengles_mobileglues" :
+                renderLibrary = "libmobileglues.so"; 
+                useGles = true; 
+                glesVersion = 3; 
+                break;
+            case "opengles3_ng_gl4es":
+                renderLibrary = "libng_gl4es.so";
                 useGles = true;
                 glesVersion = 3;
                 break;
