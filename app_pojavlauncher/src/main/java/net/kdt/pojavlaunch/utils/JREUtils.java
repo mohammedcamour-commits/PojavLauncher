@@ -140,13 +140,12 @@ public class JREUtils {
           setupAngleEnv(context, envMap);
         }
 
-        if(renderer.equals("opengles3_ng_gl4es")) {
+        if(renderer.equals("opengles3")) {
            envMap.put("LIBGL_USE_MC_COLOR", "1");
-           envMap.put("DLOPEN", "libspirv-cross-c-shared.so");
            envMap.put("LIBGL_GL", "31");
            envMap.put("LIBGL_ES", "3");
            envMap.put("LIBGL_NORMALIZE", "1");
-           envMap.put("LIBGL_NOINTOVLHACK", "1");
+           envMap.put("LIBGL_NOERROR", "1");
         }
 
         // Init mesa renderers
@@ -274,14 +273,13 @@ public class JREUtils {
                 useGles = true; 
                 glesVersion = 3; 
                 break;
-            case "opengles3_ng_gl4es":
+            case "opengles3":
                 renderLibrary = "libng_gl4es.so";
                 useGles = true;
                 glesVersion = 3;
                 break;
             case "opengles2":
             case "opengles2_5":
-            case "opengles3":
             default:
                 renderLibrary = "libgl4es_114.so";
                 useGles = true;
