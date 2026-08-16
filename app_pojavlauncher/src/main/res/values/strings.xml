@@ -525,4 +525,5 @@
     <string name="vk_mod_title">Vulkan Mod Detected</string>
     <string name="vk_mod_message">It appears you are using VulkanMod This is unsupported and may lead to crashes as most devices have poor Vulkan drivers You will be on your own. We will not provide any help if you encounter any crashes. Please do not report any bugs to the mods community</string>
     <string name="continue_button">Continue</string>
+    <string name="mcl_setting_title_renderer_settings">Mobilegluse Renderer Settings</string>
 </resources>
