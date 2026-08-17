@@ -85,7 +85,7 @@ public class LauncherPreferences {
     public static boolean PREF_MG_EXT_COMPUTE_SHADER = false;
     public static boolean PREF_MG_EXT_TIMER_QUERY = true;
     public static boolean PREF_MG_EXT_DIRECT_STATE_ACCESS = false;
-    public static int PREF_MG_FSR1 = 0;
+    public static boolean PREF_MG_FSR1 = false;
 
     public static void loadPreferences(Context ctx) {
         //Required for CTRLDEF_FILE and MultiRT
@@ -142,7 +142,7 @@ public class LauncherPreferences {
         PREF_MG_EXT_COMPUTE_SHADER = DEFAULT_PREF.getBoolean("enableExtComputeShader", false);
         PREF_MG_EXT_TIMER_QUERY = DEFAULT_PREF.getBoolean("enableExtTimerQuery", true);
         PREF_MG_EXT_DIRECT_STATE_ACCESS = DEFAULT_PREF.getBoolean("enableExtDirectStateAccess", false);
-        PREF_MG_FSR1 = DEFAULT_PREF.getInt("fsr1Setting", 0);
+        PREF_MG_FSR1 = DEFAULT_PREF.getBoolean("enableFsr1", false);
 
         String argLwjglLibname = "-Dorg.lwjgl.opengl.libname=";
         for (String arg : JREUtils.parseJavaArguments(PREF_CUSTOM_JAVA_ARGS)) {
