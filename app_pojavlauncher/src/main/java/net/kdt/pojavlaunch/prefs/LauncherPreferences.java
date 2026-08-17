@@ -82,10 +82,10 @@ public class LauncherPreferences {
     public static int PREF_MG_DEPTH_CLEAR_FIX = 0;
     public static int PREF_MG_GL_VERSION = 0;
     public static int PREF_MG_GLSL_CACHE_MIB = 32;
-    public static boolean PREF_MG_EXT_COMPUTE_SHADER;
-    public static boolean PREF_MG_EXT_TIMER_QUERY;
-    public static boolean PREF_MG_EXT_DIRECT_STATE_ACCESS;
-    public static boolean PREF_MG_FSR1;
+    public static int PREF_MG_EXT_COMPUTE_SHADER;
+    public static int PREF_MG_EXT_TIMER_QUERY;
+    public static int PREF_MG_EXT_DIRECT_STATE_ACCESS;
+    public static int PREF_MG_FSR1;
 
     public static void loadPreferences(Context ctx) {
         //Required for CTRLDEF_FILE and MultiRT
