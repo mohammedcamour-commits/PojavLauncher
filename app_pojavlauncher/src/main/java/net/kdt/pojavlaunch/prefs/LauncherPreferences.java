@@ -77,6 +77,16 @@ public class LauncherPreferences {
     public static boolean PREF_MIGRATION_NOTICE = true;
     public static boolean PREF_ALSOFT_FORCE_OPENSL = false;
 
+    public static int PREF_MG_ANGLE = 1;
+    public static int PREF_MG_NO_ERROR = 0;
+    public static int PREF_MG_DEPTH_CLEAR_FIX = 0;
+    public static int PREF_MG_GL_VERSION = 0;
+    public static int PREF_MG_GLSL_CACHE_MIB = 32;
+    public static boolean PREF_MG_EXT_COMPUTE_SHADER = false;
+    public static boolean PREF_MG_EXT_TIMER_QUERY = true;
+    public static boolean PREF_MG_EXT_DIRECT_STATE_ACCESS = false;
+    public static int PREF_MG_FSR1 = 0;
+
     public static void loadPreferences(Context ctx) {
         //Required for CTRLDEF_FILE and MultiRT
         Tools.initStorageConstants(ctx);
@@ -123,6 +133,16 @@ public class LauncherPreferences {
         PREF_ZINK_FORCE_LEGACY = DEFAULT_PREF.getBoolean("zinkForceLegacy", false);
         PREF_MIGRATION_NOTICE = DEFAULT_PREF.getBoolean("migrationNotice", true);
         PREF_ALSOFT_FORCE_OPENSL = DEFAULT_PREF.getBoolean("alsoftForceOpenSL", false);
+
+        PREF_MG_ANGLE = DEFAULT_PREF.getInt("enableANGLE", 1);
+        PREF_MG_NO_ERROR = DEFAULT_PREF.getInt("enableNoError", 0);
+        PREF_MG_DEPTH_CLEAR_FIX = DEFAULT_PREF.getInt("angleDepthClearFixMode", 0);
+        PREF_MG_GL_VERSION = DEFAULT_PREF.getInt("customGLVersion", 0);
+        PREF_MG_GLSL_CACHE_MIB = DEFAULT_PREF.getInt("maxGlslCacheSize", 32);
+        PREF_MG_EXT_COMPUTE_SHADER = DEFAULT_PREF.getBoolean("enableExtComputeShader", false);
+        PREF_MG_EXT_TIMER_QUERY = DEFAULT_PREF.getBoolean("enableExtTimerQuery", true);
+        PREF_MG_EXT_DIRECT_STATE_ACCESS = DEFAULT_PREF.getBoolean("enableExtDirectStateAccess", false);
+        PREF_MG_FSR1 = DEFAULT_PREF.getInt("fsr1Setting", 0);
 
         String argLwjglLibname = "-Dorg.lwjgl.opengl.libname=";
         for (String arg : JREUtils.parseJavaArguments(PREF_CUSTOM_JAVA_ARGS)) {
