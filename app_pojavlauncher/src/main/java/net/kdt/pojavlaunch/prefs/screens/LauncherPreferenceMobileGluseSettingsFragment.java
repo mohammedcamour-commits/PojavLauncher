@@ -61,7 +61,7 @@ public class LauncherPreferenceMobileGluseSettingsFragment extends LauncherPrefe
 
         try {
 
-            LauncherPreferences.loadPreferences();
+            LauncherPreferences.loadPreferences(requireContext());
 
             JsonObject config = new JsonObject();
 
